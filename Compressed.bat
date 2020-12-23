@@ -1,7 +1,6 @@
 @(echo off% <#%) &color 07 &title Compressed2TXT v6.3 - Files/Folders SendTo menu makecab and ascii encoder by AveYo
 chcp 65001 >nul &set "0=%~f0" &set 1=%*& powershell -nop -c iex ([io.file]::ReadAllText($env:0)) &exit/b ||#>)[1]; $PS={
 
-## Now defaults to BAT91 and short lines
 
 $Main={
 $env:1; if (!$env:1) {write-host "`n No input files or folders to encode! use 'Send to' context menu ...`n" -fore Yellow}
